@@ -20,42 +20,42 @@ export PATH=$PATH:$ANDROID_HOME/tools/bin
 
 3 - Instalar o Gradle do repositório
 ```
-sudo apt-get install gradle
+$ sudo apt-get install gradle
 ```
 
-4 - Utilizar o sdkmanager do android instalação de aplicação
+4 - Utilizar o sdkmanager do android instalação dos pacotes
 ```
-sdkmanager "platforms;android-28" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository"
-sdkmanager "system-images;android-28;google_apis;x86_64"
+$ sdkmanager "platforms;android-28" "build-tools;28.0.3" "extras;google;m2repository" "extras;android;m2repository"
+$ sdkmanager "system-images;android-28;google_apis;x86_64"
 ```
 
 5 - Emulador Android - Criando aplicação
 ```
-avdmanager create avd -n localdroid -k "system-images;android-28;google_apis;x86_64" --device "Nexus 5" --sdcard 100M
-avdmanager create avd -n localdroid17 -k "system-images;android-17;google_apis;x86_64" --device "Nexus 5" --sdcard 100M
+$ avdmanager create avd -n localdroid -k "system-images;android-28;google_apis;x86_64" --device "Nexus 5" --sdcard 100M
+$ avdmanager create avd -n localdroid17 -k "system-images;android-17;google_apis;x86_64" --device "Nexus 5" --sdcard 100M
 ```
 
 6 - Inicia o emulador:
 ```
-emulator @localdroid
+$ emulator @localdroid
 ```
 7 - Prepara o Gradle
 ```
-Compila Gradle: ./gradlew
+$ ./gradlew
 ```
 
 8 - Realiza o build do aplicativo
 ```
-./gradlew build
+$ ./gradlew build
 ```
 
 8 - Instala aplicativo no emulador (rodando):
 ```
-adb install <path>/<nome_do_apk>-debug.apk
+$ adb install <path>/<nome_do_apk>-debug.apk
 ```
   
 9 - Instala aplicativo no celular(Plugado no USB com Developer Tools habilitado)
 Testa no celular: 
 ```
-./gradlew installDebug
+$ ./gradlew installDebug
 ```
