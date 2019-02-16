@@ -6,7 +6,9 @@ sem a necessidade do Android Studio.
 
 ### Diretórios
 * /android: Todo código fonte da aplicação seguindo os requisitos do Android Studio
-* /www: Aplicação Web
+* /www: Aplicação Web ($ln -s android/app/src/main/java/assets/ www)
+* android/app/src/main/java/com/demo/app/: Código fonte Android
+* android/app/src/main/java/assets/: Código fonte HTML
 
 ### Scripts
 Alguns scripts de automoção e facilidade de acesso:
