@@ -1,9 +1,9 @@
 # Android SDK
-Notas técnicas:
-OS: Debian Stretch 9.5 (Stable)
-PROC: Intel Core i3
-RAM: 4GB DDR4
-Android SDK: [Download command line tools](https://developer.android.com/studio/#downloads)
+Notas técnicas<br />
+OS: Debian Stretch 9.5 (Stable)<br />
+PROC: Intel Core i3<br />
+RAM: 4GB DDR4<br />
+Android SDK: [Download command line tools](https://developer.android.com/studio/#downloads)<br />
 SDK Manager: [Referência de comando utilizados](https://developer.android.com/studio/command-line/sdkmanager)
 
 1 - Instalar o Android SDK do site do Google
